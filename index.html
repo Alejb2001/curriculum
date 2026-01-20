@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV de Alejandro Burciaga Calzadillas - Desarrollador Full Stack">
+    <meta name="keywords" content="desarrollador, full stack, programador, java, python, angular, django">
+    <meta name="author" content="Alejandro Burciaga Calzadillas">
+
+    <title>Alejandro Burciaga | Desarrollador Full Stack</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-code">
+                <span class="loader-bracket">{</span>
+                <span class="loader-text">Cargando</span>
+                <span class="loader-dots">...</span>
+                <span class="loader-bracket">}</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">AB</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#inicio" class="nav-link active" data-section="inicio">
+                        <i class="fas fa-home"></i>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre-mi" class="nav-link" data-section="sobre-mi">
+                        <i class="fas fa-user"></i>
+                        <span>Sobre Mí</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#habilidades" class="nav-link" data-section="habilidades">
+                        <i class="fas fa-code"></i>
+                        <span>Habilidades</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#proyectos" class="nav-link" data-section="proyectos">
+                        <i class="fas fa-folder-open"></i>
+                        <span>Proyectos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experiencia" class="nav-link" data-section="experiencia">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Experiencia</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacto" class="nav-link" data-section="contacto">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contacto</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="assets/CV_Alejandro_Burciaga.pdf" class="btn btn-primary btn-download" download>
+                    <i class="fas fa-download"></i>
+                    <span>CV</span>
+                </a>
+            </div>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <div class="hero-bg">
+                <div class="hero-gradient"></div>
+                <div class="hero-grid"></div>
+                <div class="hero-particles" id="particles"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">
+                        <span class="wave">👋</span> Hola, soy
+                    </p>
+                    <h1 class="hero-title">
+                        <span class="title-name">Alejandro</span>
+                        <span class="title-lastname">Burciaga Calzadillas</span>
+                    </h1>
+                    <div class="hero-role">
+                        <span class="role-prefix">&gt;</span>
+                        <span class="typewriter" id="typewriter"></span>
+                        <span class="cursor-blink">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Estudiante de <strong>Ingeniería en Sistemas Computacionales</strong> apasionado por crear
+                        soluciones tecnológicas innovadoras. Especializado en desarrollo web Full Stack
+                        con experiencia en tecnologías modernas.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#proyectos" class="btn btn-primary btn-large">
+                            <span>Ver Proyectos</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contacto" class="btn btn-outline btn-large">
+                            <span>Contáctame</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/Alejb2001" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:tu-email@ejemplo.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="code-title">developer.js</span>
+                        </div>
+                        <div class="code-body">
+                            <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+    <span class="code-property">nombre</span>: <span class="code-string">"Alejandro Burciaga"</span>,
+    <span class="code-property">rol</span>: <span class="code-string">"Full Stack Developer"</span>,
+    <span class="code-property">ubicacion</span>: <span class="code-string">"Chihuahua, México"</span>,
+    <span class="code-property">disponible</span>: <span class="code-boolean">true</span>,
+    <span class="code-property">skills</span>: [<span class="code-string">"Java"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"Angular"</span>],
+    <span class="code-property">pasion</span>: <span class="code-string">"Crear soluciones innovadoras"</span>
+};</code></pre>
+                        </div>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="floating-icon icon-1"><i class="fab fa-java"></i></div>
+                        <div class="floating-icon icon-2"><i class="fab fa-python"></i></div>
+                        <div class="floating-icon icon-3"><i class="fab fa-angular"></i></div>
+                        <div class="floating-icon icon-4"><i class="fab fa-js"></i></div>
+                        <div class="floating-icon icon-5"><i class="fab fa-html5"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#sobre-mi" class="scroll-indicator" aria-label="Scroll hacia abajo">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll</span>
+            </a>
+        </section>
+
+        <!-- Sobre Mí -->
+        <section class="section about" id="sobre-mi">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">&lt;sobre-mí&gt;</span>
+                    <h2 class="section-title">Conóceme</h2>
+                    <p class="section-subtitle">Un poco sobre mi trayectoria y pasión por la tecnología</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-frame">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                            <!-- Reemplaza con tu imagen: <img src="assets/foto.jpg" alt="Alejandro Burciaga"> -->
+                        </div>
+                        <div class="image-decoration"></div>
+                    </div>
+
+                    <div class="about-text">
+                        <h3>¡Hola! Soy Alejandro</h3>
+                        <p>
+                            Soy estudiante de <strong>Ingeniería en Sistemas Computacionales</strong> en Chihuahua, México.
+                            Mi pasión por la programación me ha llevado a explorar diversas áreas del desarrollo de software,
+                            desde aplicaciones móviles hasta sistemas web complejos.
+                        </p>
+                        <p>
+                            Como <strong>Desarrollador Full Stack</strong>, disfruto trabajar tanto en el frontend como en el
+                            backend, creando experiencias de usuario atractivas respaldadas por arquitecturas sólidas y eficientes.
+                        </p>
+                        <p>
+                            Siempre estoy buscando nuevos desafíos y oportunidades para aprender. Me motiva la idea de que
+                            cada línea de código puede contribuir a resolver problemas reales y mejorar la vida de las personas.
+                        </p>
+
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="8">0</span>
+                                <span class="stat-label">Proyectos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="8">0</span>
+                                <span class="stat-label">Lenguajes</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="3">0</span>
+                                <span class="stat-label">Frameworks</span>
+                            </div>
+                        </div>
+
+                        <div class="about-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Chihuahua, México</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Ing. Sistemas Computacionales</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-circle status-available"></i>
+                                <span>Disponible para proyectos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="section-tag section-tag-close">&lt;/sobre-mí&gt;</span>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="section skills" id="habilidades">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">&lt;habilidades&gt;</span>
+                    <h2 class="section-title">Mi Stack Tecnológico</h2>
+                    <p class="section-subtitle">Tecnologías y herramientas con las que trabajo</p>
+                </div>
+
+                <div class="skills-content">
+                    <!-- Lenguajes de Programación -->
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-code"></i>
+                            Lenguajes de Programación
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-card" data-skill="java">
+                                <div class="skill-icon">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <span class="skill-name">Java</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="--level: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="python">
+                                <div class="skill-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <span class="skill-name">Python</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="--level: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="javascript">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="--level: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="typescript">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                                </div>
+                                <span class="skill-name">TypeScript</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="--level: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="kotlin">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin">
+                                </div>
+                                <span class="skill-name">Kotlin</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="--level: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="csharp">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+                                </div>
+                                <span class="skill-name">C#</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="--level: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-palette"></i>
+                            Frontend
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-card" data-skill="html">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <span class="skill-name">HTML5</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="--level: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="css">
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <span class="skill-name">CSS3</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="--level: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="angular">
+                                <div class="skill-icon">
+                                    <i class="fab fa-angular"></i>
+                                </div>
+                                <span class="skill-name">Angular</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="--level: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-server"></i>
+                            Backend
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-card" data-skill="django">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+                                </div>
+                                <span class="skill-name">Django</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="--level: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="aspnet">
+                                <div class="skill-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt="ASP.NET">
+                                </div>
+                                <span class="skill-name">ASP.NET</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="--level: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Herramientas -->
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-tools"></i>
+                            Herramientas & Otros
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-card" data-skill="git">
+                                <div class="skill-icon">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                                <span class="skill-name">Git</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="--level: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="github">
+                                <div class="skill-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <span class="skill-name">GitHub</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="--level: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="android">
+                                <div class="skill-icon">
+                                    <i class="fab fa-android"></i>
+                                </div>
+                                <span class="skill-name">Android Studio</span>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="--level: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="section-tag section-tag-close">&lt;/habilidades&gt;</span>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section class="section projects" id="proyectos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">&lt;proyectos&gt;</span>
+                    <h2 class="section-title">Mis Proyectos</h2>
+                    <p class="section-subtitle">Una selección de trabajos que demuestran mis habilidades</p>
+                </div>
+
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="other">Otros</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Proyecto 1: CarZone -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Alejb2001/carzone-project" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver código">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="Ver demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Web App</span>
+                            <h3 class="project-title">CarZone Project</h3>
+                            <p class="project-description">
+                                Sitio web de venta de automóviles con catálogo interactivo,
+                                sistema de búsqueda y filtros avanzados.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2: AppMapaVegetativo -->
+                    <article class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Alejb2001/AppMapaVegetativo" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver código">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Mobile App</span>
+                            <h3 class="project-title">App Mapa Vegetativo</h3>
+                            <p class="project-description">
+                                Aplicación móvil Android para el registro y monitoreo de población
+                                vegetal con geolocalización.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Android</span>
+                                <span class="tech-tag">Maps API</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3: Mexexpress Django -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Alejb2001/Mexexpress_Django" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver código">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Web App</span>
+                            <h3 class="project-title">Mexexpress Django</h3>
+                            <p class="project-description">
+                                Tienda en línea completa desarrollada con Django, incluyendo
+                                carrito de compras y gestión de productos.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">SQLite</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 4: Compilador -->
+                    <article class="project-card" data-category="other">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-terminal"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Alejb2001/Compilador_Analizadores_Lexico_Sintactico_Semantico" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver código">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Compilador</span>
+                            <h3 class="project-title">Compilador Completo</h3>
+                            <p class="project-description">
+                                Implementación de un compilador con analizadores léxico,
+                                sintáctico y semántico desde cero.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Teoría de Compiladores</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 5: GPS Software -->
+                    <article class="project-card" data-category="other">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Alejb2001/Proyecto_GPSw" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver código">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Software</span>
+                            <h3 class="project-title">Proyecto GPS</h3>
+                            <p class="project-description">
+                                Sistema de gestión y procesamiento de datos GPS con
+                                visualización de rutas y puntos de interés.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">GPS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 6: Prolog -->
+                    <article class="project-card" data-category="other">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Alejb2001/Prolog_PL-F" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver código">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Lógica</span>
+                            <h3 class="project-title">Proyecto Prolog</h3>
+                            <p class="project-description">
+                                Proyecto final de Programación Lógica y Funcional
+                                implementado en Prolog.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Prolog</span>
+                                <span class="tech-tag">Lógica</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="projects-cta">
+                    <a href="https://github.com/Alejb2001?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <i class="fab fa-github"></i>
+                        <span>Ver más en GitHub</span>
+                    </a>
+                </div>
+
+                <span class="section-tag section-tag-close">&lt;/proyectos&gt;</span>
+            </div>
+        </section>
+
+        <!-- Experiencia / Educación -->
+        <section class="section experience" id="experiencia">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">&lt;experiencia&gt;</span>
+                    <h2 class="section-title">Experiencia & Educación</h2>
+                    <p class="section-subtitle">Mi trayectoria profesional y académica</p>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline">
+                        <!-- Timeline Item 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2021 - Presente</span>
+                                <h3 class="timeline-title">Ingeniería en Sistemas Computacionales</h3>
+                                <p class="timeline-place">Universidad en Chihuahua</p>
+                                <p class="timeline-description">
+                                    Formación integral en desarrollo de software, bases de datos,
+                                    redes, inteligencia artificial y más. Participación activa en
+                                    proyectos académicos y extracurriculares.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span>Desarrollo de Software</span>
+                                    <span>Bases de Datos</span>
+                                    <span>Algoritmos</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2023 - Presente</span>
+                                <h3 class="timeline-title">Desarrollador Full Stack</h3>
+                                <p class="timeline-place">Proyectos Personales & Freelance</p>
+                                <p class="timeline-description">
+                                    Desarrollo de aplicaciones web y móviles utilizando tecnologías
+                                    modernas. Implementación de soluciones end-to-end desde el diseño
+                                    hasta el despliegue.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span>Angular</span>
+                                    <span>Django</span>
+                                    <span>Android</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Agrega más items según tu experiencia -->
+                    </div>
+                </div>
+
+                <span class="section-tag section-tag-close">&lt;/experiencia&gt;</span>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="section contact" id="contacto">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">&lt;contacto&gt;</span>
+                    <h2 class="section-title">¡Hablemos!</h2>
+                    <p class="section-subtitle">Estoy disponible para proyectos y oportunidades</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>¿Tienes un proyecto en mente?</h3>
+                        <p>
+                            Me encantaría escuchar sobre tu proyecto y cómo puedo ayudarte
+                            a hacerlo realidad. No dudes en contactarme.
+                        </p>
+
+                        <div class="contact-methods">
+                            <a href="mailto:tu-email@ejemplo.com" class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-info">
+                                    <span class="method-label">Email</span>
+                                    <span class="method-value">tu-email@ejemplo.com</span>
+                                </div>
+                            </a>
+
+                            <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                                <div class="method-info">
+                                    <span class="method-label">LinkedIn</span>
+                                    <span class="method-value">linkedin.com/in/tu-perfil</span>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/Alejb2001" target="_blank" rel="noopener noreferrer" class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="method-info">
+                                    <span class="method-label">GitHub</span>
+                                    <span class="method-value">github.com/Alejb2001</span>
+                                </div>
+                            </a>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-info">
+                                    <span class="method-label">Ubicación</span>
+                                    <span class="method-value">Chihuahua, México</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                            <span class="form-icon"><i class="fas fa-user"></i></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                            <span class="form-icon"><i class="fas fa-envelope"></i></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" required placeholder="¿De qué quieres hablar?">
+                            <span class="form-icon"><i class="fas fa-tag"></i></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Cuéntame sobre tu proyecto..."></textarea>
+                            <span class="form-icon"><i class="fas fa-comment-alt"></i></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-block">
+                            <span>Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <span class="section-tag section-tag-close">&lt;/contacto&gt;</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#inicio" class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        <span class="logo-text">AB</span>
+                        <span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p>Desarrollador Full Stack apasionado por crear soluciones tecnológicas innovadoras.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Sígueme</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/Alejb2001" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:tu-email@ejemplo.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> Alejandro Burciaga Calzadillas. Todos los derechos reservados.</p>
+                <p class="made-with">
+                    Hecho con <i class="fas fa-heart"></i> y mucho <i class="fas fa-coffee"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
