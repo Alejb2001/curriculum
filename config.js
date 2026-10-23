@@ -29,10 +29,9 @@ const CONFIG = {
         // Textos para el efecto typewriter
         roles: [
             'Desarrollador Full Stack',
-            'Estudiante de Ing. en Sistemas',
+            'Ingeniero en Sistemas Computacionales',
             'Apasionado por la Tecnología',
-            'Creador de Soluciones Digitales',
-            'Desarrollador Web & Mobile'
+            'Creador de Soluciones Digitales'
         ]
     },
 
@@ -196,7 +195,7 @@ const CONFIG = {
             icono: "fas fa-graduation-cap",
             fecha: "2021 - Presente",
             titulo: "Ingeniería en Sistemas Computacionales",
-            lugar: "Universidad en Chihuahua",
+            lugar: "Instituto Tecnológico de Chihuahua II",
             descripcion: `Formación integral en desarrollo de software, bases de datos,
                 redes, inteligencia artificial y más. Participación activa en
                 proyectos académicos y extracurriculares.`,

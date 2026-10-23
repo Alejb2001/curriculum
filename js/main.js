@@ -199,10 +199,9 @@ function initTypewriter() {
 
     const texts = [
         'Desarrollador Full Stack',
-        'Estudiante de Ing. en Sistemas',
+        'Ingeniero en Sistemas Computacionales',
         'Apasionado por la Tecnología',
-        'Creador de Soluciones Digitales',
-        'Desarrollador Web & Mobile'
+        'Creador de Soluciones Digitales'
     ];
 
     let textIndex = 0;
