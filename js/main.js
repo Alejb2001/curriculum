@@ -535,20 +535,13 @@ function initContactForm() {
 
         // Simulate form submission (replace with actual API call)
         try {
-            // For static sites, you can use services like:
-            // - Formspree (https://formspree.io)
-            // - Netlify Forms
-            // - EmailJS
+            const response = await fetch('https://formspree.io/f/mnppnaaa', {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            });
 
-            // Example with Formspree:
-            // const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-            //     method: 'POST',
-            //     body: formData,
-            //     headers: { 'Accept': 'application/json' }
-            // });
-
-            // Simulate success
-            await new Promise(resolve => setTimeout(resolve, 1500));
+            if (!response.ok) throw new Error('Error en el envío');
 
             // Show success message
             submitBtn.innerHTML = '<i class="fas fa-check"></i> ¡Mensaje Enviado!';

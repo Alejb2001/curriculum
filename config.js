@@ -95,7 +95,6 @@ const CONFIG = {
         herramientas: [
             { nombre: "Git", icono: "fab fa-git-alt", nivel: 85 },
             { nombre: "GitHub", icono: "fab fa-github", nivel: 85 },
-            { nombre: "Android Studio", icono: "fab fa-android", nivel: 75 }
         ]
     },
 
@@ -193,7 +192,7 @@ const CONFIG = {
         {
             tipo: "educacion", // "educacion" o "trabajo"
             icono: "fas fa-graduation-cap",
-            fecha: "2021 - Presente",
+            fecha: "2021 - 2026",
             titulo: "Ingeniería en Sistemas Computacionales",
             lugar: "Instituto Tecnológico de Chihuahua II",
             descripcion: `Formación integral en desarrollo de software, bases de datos,
