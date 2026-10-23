@@ -40,8 +40,8 @@ const CONFIG = {
     // INFORMACIÓN DE CONTACTO
     // ==========================================
     contacto: {
-        email: "tu-email@ejemplo.com",  // Actualiza con tu email real
-        linkedin: "https://linkedin.com/in/tu-perfil",  // Actualiza con tu LinkedIn
+        email: "alejbur@gmail.com",
+        linkedin: "https://www.linkedin.com/in/alejandro-burciaga-744a18210",
         github: "https://github.com/Alejb2001",
         // Agrega más redes sociales si lo deseas:
         // twitter: "https://twitter.com/tu-usuario",
@@ -66,7 +66,7 @@ const CONFIG = {
 
         // Estadísticas
         stats: {
-            proyectos: 8,
+            proyectos: 9,
             lenguajes: 8,
             frameworks: 3
         }
@@ -105,21 +105,66 @@ const CONFIG = {
     // ==========================================
     proyectos: [
         {
-            titulo: "CarZone Project",
+            titulo: "Teclados Shop",
             categoria: "web",
-            descripcion: "Sitio web de venta de automóviles con catálogo interactivo, sistema de búsqueda y filtros avanzados.",
-            tecnologias: ["JavaScript", "HTML", "CSS"],
-            icono: "fas fa-car",
-            github: "https://github.com/Alejb2001/carzone-project",
-            demo: null // Agregar URL de demo si existe
+            descripcion: "Tienda en línea para venta de teclados mecánicos y periféricos, desarrollada con TypeScript.",
+            tecnologias: ["TypeScript"],
+            icono: "fas fa-keyboard",
+            github: "https://github.com/Alejb2001/teclados-shop",
+            demo: null
         },
         {
-            titulo: "App Mapa Vegetativo",
-            categoria: "mobile",
-            descripcion: "Aplicación móvil Android para el registro y monitoreo de población vegetal con geolocalización.",
-            tecnologias: ["Java", "Android", "Maps API"],
-            icono: "fas fa-leaf",
-            github: "https://github.com/Alejb2001/AppMapaVegetativo",
+            titulo: "DM Admin App",
+            categoria: "web",
+            descripcion: "Aplicación web para administrar campañas de juegos de rol de mesa, con backend REST en C#.",
+            tecnologias: ["TypeScript", "C#", "ASP.NET"],
+            icono: "fas fa-dice-d20",
+            github: "https://github.com/Alejb2001/DM-admin-app",
+            demo: null
+        },
+        {
+            titulo: "Jestr Activity Tracking",
+            categoria: "web",
+            descripcion: "Plataforma web para la planeación y seguimiento de actividades, con API REST en C#.",
+            tecnologias: ["TypeScript", "C#", "ASP.NET"],
+            icono: "fas fa-running",
+            github: "https://github.com/Alejb2001/jestr-activity-tracking-app",
+            demo: null
+        },
+        {
+            titulo: "FinanciApp",
+            categoria: "web",
+            descripcion: "Aplicación web para la administración de finanzas personales con seguimiento de gastos e ingresos.",
+            tecnologias: ["TypeScript"],
+            icono: "fas fa-chart-line",
+            github: "https://github.com/Alejb2001/FinanciApp",
+            demo: null
+        },
+        {
+            titulo: "Wiki Libros",
+            categoria: "web",
+            descripcion: "Plataforma full stack para gestión de libros con frontend en Angular y backend en ASP.NET.",
+            tecnologias: ["Angular", "C#", "ASP.NET"],
+            icono: "fas fa-book",
+            github: "https://github.com/Alejb2001/wiki-libros-CF",
+            demo: null
+        },
+        {
+            titulo: "Bird Care Web",
+            categoria: "web",
+            descripcion: "Plataforma web para el cuidado y seguimiento de aves con información y registro de especies.",
+            tecnologias: ["HTML", "CSS", "JavaScript"],
+            icono: "fas fa-dove",
+            github: "https://github.com/Alejb2001/bird-care-web",
+            demo: null
+        },
+        {
+            titulo: "MatchupCompanion",
+            categoria: "other",
+            descripcion: "Aplicación .NET que ofrece información de matchups para tu campeón favorito de League of Legends.",
+            tecnologias: ["C#", ".NET"],
+            icono: "fas fa-gamepad",
+            github: "https://github.com/Alejb2001/MatchupCompanion",
             demo: null
         },
         {
@@ -138,24 +183,6 @@ const CONFIG = {
             tecnologias: ["Java", "Teoría de Compiladores"],
             icono: "fas fa-terminal",
             github: "https://github.com/Alejb2001/Compilador_Analizadores_Lexico_Sintactico_Semantico",
-            demo: null
-        },
-        {
-            titulo: "Proyecto GPS",
-            categoria: "other",
-            descripcion: "Sistema de gestión y procesamiento de datos GPS con visualización de rutas y puntos de interés.",
-            tecnologias: ["Java", "GPS"],
-            icono: "fas fa-map-marked-alt",
-            github: "https://github.com/Alejb2001/Proyecto_GPSw",
-            demo: null
-        },
-        {
-            titulo: "Proyecto Prolog",
-            categoria: "other",
-            descripcion: "Proyecto final de Programación Lógica y Funcional implementado en Prolog.",
-            tecnologias: ["Prolog", "Lógica"],
-            icono: "fas fa-brain",
-            github: "https://github.com/Alejb2001/Prolog_PL-F",
             demo: null
         }
     ],
